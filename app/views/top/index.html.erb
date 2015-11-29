@@ -7,6 +7,7 @@
   <% else %>
       <%= link_to "MyPage", mypage_path,:class => "btn btn-danger pull-right sign-out-button" %>
       <%= link_to "SignOut", destroy_user_session_path,:class => "btn btn-danger pull-right sign-out-button", :method => :delete %>
+      <%= link_to "MyPage", mypage_path,:class => "btn btn-danger pull-right go-home-button", :method => :get %>
   <% end %>
   </div>
   <div class="season">
